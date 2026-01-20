@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | OP Ashish</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header>
+            <h1>👨‍💼 Admin Dashboard</h1>
+            <button id="logoutBtn">🚪 Logout</button>
+        </header>
+
+        <div class="admin-content">
+            <h2>📊 All Registered Users</h2>
+            <div class="users-list" id="usersList">
+                <p>Loading users...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

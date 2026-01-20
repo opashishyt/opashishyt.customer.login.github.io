@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.logo h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+}
+
+.tab {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #777;
+    transition: 0.3s;
+}
+
+.tab.active {
+    color: #4a6ee0;
+    border-bottom: 3px solid #4a6ee0;
+    font-weight: bold;
+}
+
+.tab:hover {
+    color: #333;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form.active-form {
+    display: flex;
+}
+
+.form input {
+    padding: 16px;
+    border: 2px solid #e1e5eb;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.form input:focus {
+    border-color: #4a6ee0;
+    outline: none;
+    box-shadow: 0 0 10px rgba(74, 110, 224, 0.3);
+}
+
+.form button {
+    padding: 16px;
+    background: linear-gradient(90deg, #4a6ee0, #6a8eff);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.form button:hover {
+    background: linear-gradient(90deg, #3a5ed0, #5a7eff);
+    transform: translateY(-2px);
+}
+
+.error {
+    color: #ff4757;
+    font-size: 14px;
+    margin-top: 10px;
+    min-height: 20px;
+}
+
+.admin-link {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.admin-link a {
+    color: #4a6ee0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.admin-link a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 30px;
+    color: #666;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer a {
+    color: #4a6ee0;
+    text-decoration: none;
+    font-weight: bold;
+}
